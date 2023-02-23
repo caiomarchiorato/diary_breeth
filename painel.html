@@ -1,0 +1,60 @@
+
+<!doctype html>
+
+<html>
+
+
+<img src="LOGO Bioma investimentos-06.png" height="185" width="440"></img>
+
+<head>
+<h1><font color="#00aea9" face="Vilane"> Painel  </font> </h1>
+<p> Bom dia Biomers!! </p>
+<iframe title="proleite" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=42de9fc9-22b7-4bc6-b7fd-280990d7bb4a&autoAuth=true&ctid=192358bd-a29c-4f0e-aaa5-c3a85b40a82e" frameborder="0" allowFullScreen="true"></iframe>
+<h2><font color="#00aea9" face="Vilane"> Analise </font></h2>
+<h2><font color="#00aea9" face="Vilane"> Comercial </font></h2>
+<h2><font color="#00aea9" face="Vilane">  </font></h2>
+ <div>
+        <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+            
+				atualizaRelogio();
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<output id="data" style="font-family: 'Vilane', 'avant garde'; font-size: 24px;"></output>
+		</div>	
+	</body>
+	<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+						
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+
+			document.getElementById("data").innerHTML = dataFormat;
+
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>	
+</div>
+
+<div>
+    <text>
+		<p style="font-size:15px 'Vilane' "> Bom dia Biomers!! &#129305;</p>
+    </text>
+</div>
+
+</head>
+<!-- Widgets Notícias Agrícolas - www.noticiasagricolas.com.br/widgets -->
+<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/noticias?subsecao=2,8,10,64,80,4,11,12,156,60,13,163,97,14,205,15,1,155,84,28,149,26,69,90,62,27,92,148,154,32,67,101,102,103,105,106,107,108,109,147,110,111,112,113,159,114,157,115,116,68,164,117,118,119,204,120,121,203,166&largura=450px&altura=250px&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&cortexto=00a8ae&corlink=00a8ae&qtd=15&output=js"></script>
+<script type="text/javascript" src="https://www.cepea.esalq.usp.br/br/widgetproduto.js.php?fonte=arial&tamanho=12&largura=400px&corfundo=00afa9&cortexto=333333&corlinha=ffffff&id_indicador%5B%5D=2&id_indicador%5B%5D=8&id_indicador%5B%5D=3&id_indicador%5B%5D=77&id_indicador%5B%5D=12&id_indicador%5B%5D=92&id_indicador%5B%5D=leitep"></script>
+</html>

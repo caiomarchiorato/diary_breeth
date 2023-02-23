@@ -1,0 +1,33 @@
+<HTML>
+	<HEAD><TITLE>Exibir Data e Hora em HTML </TITLE>
+		<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+	</HEAD>
+	<BODY>
+		<div>
+			<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+		</div>	
+	</BODY>
+	<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+						
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+
+			document.getElementById("data").innerHTML = dataFormat;
+
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>	
+</HTML>
